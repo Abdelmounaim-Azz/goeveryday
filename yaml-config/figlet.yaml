@@ -1,0 +1,2 @@
+name: figlet
+image: docker.io/functions/figlet:latest

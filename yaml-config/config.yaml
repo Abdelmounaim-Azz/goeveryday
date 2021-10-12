@@ -1,0 +1,18 @@
+version: 1.0
+provider:
+name: openfaas
+gateway: http://127.0.0.1:8080
+functions:
+gumroad-upgrade:
+lang: node12
+handler: ./gumroad-upgrade
+image: alexellis2/gumroad-upgrade:0.2.1
+environment:
+  subject: "Your bonus upgrade to my video workshop"
+  sender: sales@openfaas.com
+  region: "eu-west-1"
+secrets:
+  - ses-access-key-id
+  - ses-access-token
+  - seller-id
+  - secret-url
