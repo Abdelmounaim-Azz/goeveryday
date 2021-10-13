@@ -11,7 +11,7 @@ ARG GitCommit
 ENV CGO_ENABLED=0
 ENV GO111MODULE=on
 
-WORKDIR /go/src/github.com/alexellis/release-it
+WORKDIR /go/src/github.com/Abdelmounaim-Azz/release-it
 
 COPY .  .
 
